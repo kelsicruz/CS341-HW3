@@ -1,0 +1,126 @@
+<!-- Author: Kelsi Cruz -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework 1 CS341</title>
+<!-- Link to CSS file -->
+<link rel="stylesheet" href="./stylesheets/hw3.css">
+<script
+  src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+</script>
+</head>
+</head>
+<body>
+
+
+<h1>Cheesecake Order Form</h1>
+<h2>Shiley Bakery</h2>
+<!-- Link to cheesecake image from Wikipedia -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake with raspberry sauce." width="150" height="150">
+<img src="https://cookiesandcups.com/wp-content/uploads/2019/02/chocolatecheesecake-8.jpg" alt="Chocolate Cheesecake." width="150" height="150">
+<img src="https://cookiesandcups.com/wp-content/uploads/2017/10/perfectcheesecake-13.jpg" alt="Plain Cheesecake." width="150" height="150">
+
+<div id = "first" style="display: block">
+<form name="myForm" id="form" class="form" action=# onsubmit="validateForm()">
+
+  <p>Quantity/Topping</p>
+  <!-- Defines drop-down menu for quantity option -->
+    <table id="table" style="width:20%" class="center">
+    <tr>
+	    <td>
+        <select id="quantity">
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+	      </select></td>
+
+      <!-- Defines radio buttons for flavor options -->
+	    <td>
+    	  <input type="radio" name="topping" id="plain" value="plain"> Plain
+      </td>
+    </tr>
+    
+    <tr>
+      <td></td>
+      <td>
+		    <input type="radio" name="topping" id="cherry" value="cherry"> Cherry
+      </td>
+    </tr>
+  
+    <tr>
+      <td></td>
+      <td>
+    	  <input type="radio" name="topping" id="choco" value="chocolate"> Chocolate
+      </td>
+    </tr>
+  </table>
+
+
+  <!-- Defines expandable text box for notes -->
+  <p>Notes:</p>
+    <textarea rows="4" cols="50" name="notes" id="notes" placeholder="Enter any special instructions here." value = ""></textarea><br>
+    <input type="submit" value="Order">
+  
+</form>
+
+</div>
+
+<!-- Starter code borrowed from w3 schools: https://www.w3schools.com/js/js_validation.asp-->
+<!-- Code below outlines cases for form validation.-->
+<script src="javascripts/hw3.js"></script>
+
+
+<!--Display to replace form once submitted successfully.-->
+<div id="second" style="display: none">
+
+  <h2>Thank you! Your order has been placed.</h2>
+  <h3>Quantity: </h3>
+  <h3 id="quantityresults"></h3>
+
+  <br>
+  <h3>Topping: </h3>
+  <h3 id="flavorresults"></h3>
+  <br>
+
+  <h3>Notes: </h3>
+  <h3 id="notesresults"></h3>
+  
+
+</div>
+
+<!-- Text list of orders from last month -->
+<!-- Starter code borrowed from w3 schools. Link: https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+<h3>Orders for</h3>
+<div class="dropdown">
+  <button class="dropbtn" onclick="changeText()" >Jan</button>
+  <div id="myDropDown" class="dropdown-content">
+    <a value="Feb">Feb</a>
+    <a value="Mar">Mar</a>
+    <a value="Apr">Apr</a>
+    <a value="May">May</a>
+    <a value="Jun">Jun</a>
+    <a value="Jul">Jul</a>
+    <a value="Aug">Aug</a>
+    <a value="Sep">Sep</a>
+    <a value="Oct">Oct</a>
+    <a value="Nov">Nov</a>
+    <a value="Nov">Dec</a>
+    </div>
+</div>
+
+
+<!-- Code for changing button text courtesy of StackOverflow-->
+<!-- Link: https://stackoverflow.com/questions/13437446/how-to-display-selected-item-in-bootstrap-button-dropdown-title-->
+<script src="javascripts/hw3.js"></script>
+
+
+
+  <ul>
+  <li>11 Cherry</li>
+  <li>17 Chocolate</li>
+  <li>31 Plain</li>
+</ul>
+  
+
+</body>
+</html>

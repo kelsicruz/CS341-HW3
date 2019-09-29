@@ -1,0 +1,98 @@
+/* Author: Kelsi Cruz */
+
+body {
+  background-image: url("https://66.media.tumblr.com/58ceb7bb9f5c56137c39f7c0a693f4e8/tumblr_px9rpofDIJ1wf6fibo1_400.png");
+  text-align:center;
+}
+
+h1 {
+  font-family: Palatino, serif;
+  font-variant: small-caps;
+  color: IndianRed;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: Palatino, serif;
+  color: indianred;
+}
+
+h3{
+  font-family: Garamond, serif;
+  font-variant: small-caps;
+  color: #544e4d;
+  display: inline;
+}
+
+/* Borrowed starter code from w3 schools: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropbtn {
+  background-color: indianred;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/* Scrollable css feature referenced from StackOverflow */
+/* Link: https://stackoverflow.com/questions/21983819/making-a-drop-down-menu-scrollable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  max-height:250px;
+  overflow:auto
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(143, 59, 59);}
+
+table.center {
+  font-family: Garamond, serif;
+  text-align: left;
+  color: #e3d2ca;
+  border: 1px solid #e3d2ca;
+  background-color: #947768b0;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+ul {
+  list-style-image: url('https://66.media.tumblr.com/90a9a9034fa07b7fc50cb6e80aa6f9dd/tumblr_px9rpofDIJ1wf6fibo2_75sq.png');
+  list-style-position: inside;
+  color: #544e4d;
+}
+
+p {
+  font-family: Garamond, serif;
+  color: #544e4d;
+}
+
+/*input code courtesy of http://jsfiddle.net/5rjc7/*/
+input[type=submit] {
+  border: 1px solid indianred;
+  color: #e3d2ca;
+  background: indianred;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
